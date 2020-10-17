@@ -1,0 +1,47 @@
+{"intents": [
+        {"tag": "saludo",
+         "patterns": ["Hey", "¿Como estas?", "¿Hay alguien ahi?", "Hola", "Buen día"],
+         "responses": ["Hola, gracias por visitarnos!", "Hola nuevamente!", "Hola!, ¿Como puedo ayudarte?"],
+         "context_set": ""
+        },
+        {"tag": "despedida",
+         "patterns": ["Chao", "Hasta luego", "Adios"],
+         "responses": ["Hasta luego, gracias por visitarnos", "Que tengas un buen día", "Adios! Vuelve pronto."]
+        },
+        {"tag": "gracias",
+         "patterns": ["Gracias", "Te agradezco", "Gran ayuda!"],
+         "responses": ["Un gusto ayudar!", "Cuando quieras!", "Un placer"]
+        },
+        {"tag": "horas",
+         "patterns": ["¿A que hora abren?", "¿Cual es su horario?", "¿En que momento abren?" ],
+         "responses": ["Abrimos de 9am a 9pm el día de hoy", "Nuestro horario es Lunes a Domingo de 9am a 9pm"]
+        },
+        {"tag": "mopeds",
+         "patterns": ["¿Que Mopeds tienen?", "¿Que modelos de moped tienen?", "¿Que tienen disponible para renta?" ],
+         "responses": ["Rentamos Yamaha, Piaggio y Vespa", "Tenemos Piaggio, Vespa Yamaha disponibles"]
+        },
+        {"tag": "pagos",
+         "patterns": ["¿Reciben tarjeta de credito?", "¿Aceptan Mastercard?", "¿Solo reciben efectivo?" ],
+         "responses": ["Aceptamos VISA, Mastercard y AMEX ademas de efectivo", "Aceptamos la mayoria de tarjetas de credito incluyendo pagos en efectivo"]
+        },
+        {"tag": "abrenhoy",
+         "patterns": ["¿Abren el día de hoy?", "¿A que hora abren hoy?", "¿Que horario tienen el día de hoy?"],
+         "responses": ["Abrimos de 9am a 9pm todos los dias", "Nuestro horario es de lunes a domingo de 9am a 9pm"]
+        },
+        {"tag": "rentar",
+         "patterns": ["¿Tienen renta disponible?", "Me gustaria rentar una Moped el día de hoy", "¿Como es el tramite para renta?" ],
+         "responses": ["Claro!, Estas buscando rentar el día de hoy o la siguiente semana?"],
+         "context_set": "rentalday"
+        },
+        {"tag": "hoy",
+         "patterns": ["hoy"],
+         "responses": ["Para rentar el día de hoy visita www.mopedcolombia.com/disponible/hoy/ para verificar disponibilidad", "Renta para el día de hoy de hoy visita www.mopedcolombia.com/disponible/hoy/ para verificar disponibilidad"],
+         "context_filter": "rentalday"
+        },
+        {"tag": "siguientesemana",
+         "patterns": ["siguiente semana"],
+         "responses": ["Separa un cupo a traves del siguiente enlace: www.mopedcolombia.com/cupo/programar/", "Separa un cupo ingresando al enlace: www.mopedcolombia.com/cupo/programar/"],
+         "context_filter": "rentalnextweek"
+        }
+   ]
+}
