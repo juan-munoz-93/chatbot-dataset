@@ -1,7 +1,7 @@
 {"intents": [
         {"tag": "saludo",
          "patterns": ["Hey", "¿Como estas?", "¿Hay alguien ahi?", "Hola", "Buen día"],
-         "responses": ["Hola, Bienvenido a la tienda de guitarras ideales!", "Hola bienvenid@!", "Hola!, ¿Como puedo ayudarte?"],
+         "responses": ["Hola, Bienvenido a la tienda de guitarras ideales El Bosque!", "Hola bienvenid@!", "Hola!, ¿Como puedo ayudarte?"],
          "context_set": ""
         },
         {"tag": "despedida",
@@ -13,30 +13,30 @@
          "responses": ["Un gusto ayudar!", "Cuando quieras!", "Un placer"]
         },
         {"tag": "horas",
-         "patterns": ["¿A que hora abren hoy?", "¿Cual es su horario?", "¿En que momento abren?" ],
+         "patterns": ["¿A que hora abren hoy?", "¿Cual es su horario?", "¿En que momento abren?", "horario" ],
          "responses": ["Abrimos de 9am a 9pm el día de hoy", "Nuestro horario es Lunes a Domingo de 9am a 9pm"]
         },
         {"tag": "guitarras",
-         "patterns": ["¿Que marcas de guitarra ofrecen?", "¿Que modelos de guitarra tienen?", "¿Que guitarras ofrecen?" ],
+         "patterns": ["¿Que marcas de guitarra ofrecen?", "¿Que modelos de guitarra tienen?", "¿Que guitarras ofrecen?" ,"guitarras", "estoy buscando guitarras"],
          "responses": ["Tenemos disponible Gibson, Fender, Ibanez y Yamaha", "Claro, disponibles hay Gibson, Fender, Ibanez y Yamaha"]
         },
         {"tag": "gibson",
-         "patterns": ["¿Que Gibson tienes disponibles?", "¿Que modelos de Gibson tienen?", "Estoy buscando Gibson" ],
+         "patterns": ["¿Que Gibson tienes disponibles?", "¿Que modelos de Gibson tienen?", "Estoy buscando Gibson", "Me interesa Gibson", "Gibson", "gibson" ],
          "responses": ["Por supuesto!, Tenemos Gibson Les Paul Classic, Gibson SG, Gibson Flying V y su variante economica Epiphone Les Paul", "Para la marca Gibson tenemos: Gibson Les Paul Classic, Gibson SG, Gibson Flying V y su variante economica Epiphone Les Paul"],
          "context_filter": "gibson"
         },
         {"tag": "fender",
-         "patterns": ["¿Que Fender tienes disponibles?", "¿Que modelos de Fender tienen?", "Estoy buscando Fender" ],
+         "patterns": ["¿Que Fender tienes disponibles?", "¿Que modelos de Fender tienen?", "Estoy buscando Fender", "Me interesa Fender", "Fender", "fender" ],
          "responses": ["Claro que si!, Hay Fender American Standard, Stratocaster, y variantes de Super Strat y Fat Strat de Fender", "Para la marca Fender tenemos: American Standard, Stratocaster, y variantes de Super Strat y Fat Strat de Fender"],
          "context_filter": "fender"
         },
         {"tag": "ibanez",
-         "patterns": ["¿Que Ibanez tienes disponibles?", "¿Que modelos de Ibanez tienen?", "Estoy buscando Ibanez" ],
+         "patterns": ["¿Que Ibanez tienes disponibles?", "¿Que modelos de Ibanez tienen?", "Estoy buscando Ibanez", "Me interesa Ibanez", "Ibanez", "ibanez" ],
          "responses": ["De acuerdo!, Hay Ibanez Series RG, S, Signature y Hollowbody todas Microafinadas.", "Para la marca Ibanez tenemos: Ibanez Series RG, S, Signature y Hollowbody de tipo Microafinado."],
          "context_filter": "ibanez"         
         },
         {"tag": "yamaha",
-         "patterns": ["¿Que Yamaha tienes disponibles?", "¿Que modelos de Yamaha tienen?", "Estoy buscando Yamaha" ],
+         "patterns": ["¿Que Yamaha tienes disponibles?", "¿Que modelos de Yamaha tienen?", "Estoy buscando Yamaha", "Me interesa Yamaha", "Yamaha", "yamaha" ],
          "responses": ["Por supuesto!, Para Guitarras Yamaha solo tenemos variantes de RGX A2 y Pacifica 112, algunos modelos estan proximos a llegar", "Para la marca Yamaha solo tenemos: Yamaha RGX A2 y Pacifica 112, algunos modelos estan proximos a llegar"],
          "context_filter": "yamaha"
         },
@@ -53,17 +53,17 @@
          "responses": ["Abrimos de 9am a 9pm todos los dias", "Nuestro horario es de lunes a domingo de 9am a 9pm"]
         },
         {"tag": "cursos",
-         "patterns": ["¿Ofrecen cursos de guitarra?", "Cursos de guitarra"],
+         "patterns": ["¿Ofrecen cursos de guitarra?", "Cursos de guitarra", "cursos" , "Cursos"],
          "responses": ["Claro!, ofrecemos cursos de todos los niveles, desde principiante hasta niveles superiores. Nuestros horarios dependen de la disponibilidad del servicio que ofrece la escuela con quienes tenemos convenio. Comunicate al 018000 323 940 EXT 34 para mas información"],
          "context_set": "cursos"
         },
         {"tag": "accesorios",
-         "patterns": ["Busco accesorios para guitarra", "¿Tienen accesorios para guitarra?", "Estoy buscando accesorios para guitarra"],
+         "patterns": ["Busco accesorios para guitarra", "¿Tienen accesorios para guitarra?", "Estoy buscando accesorios para guitarra", "accesorios", "Accesorios"],
          "responses": ["Por supuesto!, Tenemos repuestos de cuerdas, cables y amplificadores de guitarra unicamente Marshall", "Claro que si!, Tenemos cables y amplificadores Marshall, y ofrecemos tambien repuestos de cuerdas"],
          "context_filter": "accesorios"
         },
         {"tag": "amplificador",
-         "patterns": ["Marshall", "Amplificador", "Amplificadores"],
+         "patterns": ["Marshall", "Amplificador", "Amplificadores", "marshall"],
          "responses": ["Tenemos unicamente amplificadores de la marca Marshall de 45W, 60W, 85W, 110W", "Unicamente estamos ofreciendo amplificadores de la marca Marshall de 45W, 60W, 85W, 110W"],
          "context_filter": "amplificador"
         },
@@ -108,7 +108,7 @@
          "context_filter": "e2"
         },
         {"tag": "calibres",
-         "patterns": ["¿Que son los calibres de cuerda de guitarra?", "¿Calibres?", "Explicame que significan los calibres de cuerda de guitarra"],
+         "patterns": ["¿Que son los calibres de cuerda?", "¿Calibres?", "Explicame que significan los calibres de cuerda", "¿calibres?"],
          "responses": ["Los calibres de cuerda de guitarra estan compuestos por un materia que permiten generar una resonancia al producir una vibracion, La primer letra del calibre indica el tono de la cuerda y el numero que acompaña la letra indica su calibre, 1 para tonalidades iniciales, 2 para reforzado de bronce y tonos graves."],
          "context_filter": "calibres"
         },
