@@ -1,8 +1,13 @@
 {"intents": [
         {"tag": "saludo",
-         "patterns": ["Hey", "¿Como estas?", "¿Hay alguien ahi?", "Hola", "Buen día"],
-         "responses": ["Hola, Bienvenido a la tienda de guitarras ideales El Bosque!", "Hola bienvenid@!", "Hola!, ¿Como puedo ayudarte?"],
+         "patterns": ["Hey", "¿Como estas?", "¿Hay alguien ahi?", "Hola", "Buen día", "¿Que mas?", "¿Como va la cosa?", "¿Quiubo?", "Kiubo"],
+         "responses": ["Hola, Bienvenido a la tienda de guitarras ideales El Bosque!", "Hola bienvenid@ a la tienda de guitarras!", "Hola! esta es la tienda de guitarras ideales El Bosque, ¿Como puedo ayudarte?"],
          "context_set": ""
+        },
+        {"tag": "curioso",
+         "patterns": ["¿Quien eres?", "¿Que eres?"],
+         "responses": ["Soy el ayudante virtual de esta tienda!"],
+         "context_set": "curioso"
         },
         {"tag": "despedida",
          "patterns": ["Chao", "Hasta luego", "Adios"],
