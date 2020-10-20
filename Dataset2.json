@@ -10,7 +10,7 @@
          "context_set": "curioso"
         },
         {"tag": "despedida",
-         "patterns": ["Chao", "Hasta luego", "Adios"],
+         "patterns": ["Chao", "Hasta luego", "Adios", "Nos vemos", "Hablamos", "Vemos"],
          "responses": ["Hasta luego, gracias por visitarnos", "Que tengas un buen día", "Adios! Vuelve pronto."],
          "context_filter": "despedida"
         },
@@ -35,7 +35,7 @@
          "context_filter": "gibson"
         },
         {"tag": "fender",
-         "patterns": ["¿Que Fender tienes disponibles?", "¿Que modelos de Fender tienen?", "Estoy buscando Fender", "Me interesa Fender", "Fender" ],
+         "patterns": ["¿Que Fender tienes disponibles?", "¿Que modelos de Fender tienen?", "Estoy buscando Fender", "Me interesa Fender", "Fender"],
          "responses": ["Claro que si!, Hay Fender American Standard, Stratocaster, y variantes de Super Strat y Fat Strat de Fender", "Para la marca Fender tenemos: American Standard, Stratocaster, y variantes de Super Strat y Fat Strat de Fender"],
          "context_filter": "fender"
         },
@@ -45,7 +45,7 @@
          "context_filter": "ibanez"         
         },
         {"tag": "yamaha",
-         "patterns": ["¿Que Yamaha tienes disponibles?", "¿Que modelos de Yamaha tienen?", "Estoy buscando Yamaha", "Me interesa Yamaha", "Yamaha"],
+         "patterns": ["¿Que Yamaha tienes disponibles?", "¿Que modelos de Yamaha tienen?", "Estoy buscando Yamaha", "Me interesa Yamaha", "Yamaha" ],
          "responses": ["Por supuesto!, Para Guitarras Yamaha solo tenemos variantes de RGX A2 y Pacifica 112, algunos modelos estan proximos a llegar", "Para la marca Yamaha solo tenemos: Yamaha RGX A2 y Pacifica 112, algunos modelos estan proximos a llegar"],
          "context_filter": "yamaha"
         },
@@ -55,7 +55,7 @@
          "context_filter": "credito"
         },
         {"tag": "efectivo",
-         "patterns": ["¿Aceptan pagos en efectivo?", "¿Efectivo?"],
+         "patterns": ["¿Aceptan pagos en efectivo?", "¿Efectivo?", "¿Reciben efectivo?", "¿Aceptan efectivo?", "¿Aceptan cash?"],
          "responses": ["Aceptamos pagos en efectivo y tambien pagos mediante tarjetas de credito como VISA, Mastercard y AMEX", "Aceptamos la mayoria de tarjetas de credito incluyendo pagos en efectivo"],
          "context_filter": "efectivo"
         },
@@ -64,12 +64,12 @@
          "responses": ["Abrimos de 9am a 9pm todos los dias", "Nuestro horario es de lunes a domingo de 9am a 9pm"]
         },
         {"tag": "cursos",
-         "patterns": ["¿Ofrecen cursos de guitarra?", "Cursos de guitarra", "cursos"],
+         "patterns": ["¿Ofrecen cursos de guitarra?", "Cursos de guitarra" , "Cursos"],
          "responses": ["Claro!, ofrecemos cursos de todos los niveles, desde principiante hasta niveles superiores. Nuestros horarios dependen de la disponibilidad del servicio que ofrece la escuela con quienes tenemos convenio. Comunicate al 018000 323 940 EXT 34 para mas información"],
          "context_set": "cursos"
         },
         {"tag": "accesorios",
-         "patterns": ["Busco accesorios para guitarra", "¿Tienen accesorios para guitarra?", "Estoy buscando accesorios para guitarra", "accesorios"],
+         "patterns": ["Busco accesorios para guitarra", "¿Tienen accesorios para guitarra?", "Estoy buscando accesorios para guitarra", "Accesorios"],
          "responses": ["Por supuesto!, Tenemos repuestos de cuerdas, cables y amplificadores de guitarra unicamente Marshall", "Claro que si!, Tenemos cables y amplificadores Marshall, y ofrecemos tambien repuestos de cuerdas"],
          "context_filter": "accesorios"
         },
@@ -119,13 +119,13 @@
          "context_filter": "e2"
         },
         {"tag": "calibres",
-         "patterns": ["¿Que son los calibres de cuerda?", "¿Calibres?", "Explicame que significan los calibres de cuerda", "¿calibres?"],
+         "patterns": ["¿Que son los calibres de cuerda?", "¿Calibres?", "Explicame que significan los calibres de cuerda"],
          "responses": ["Los calibres de cuerda de guitarra estan compuestos por un materia que permiten generar una resonancia al producir una vibracion, La primer letra del calibre indica el tono de la cuerda y el numero que acompaña la letra indica su calibre, 1 para tonalidades iniciales, 2 para reforzado de bronce y tonos graves."],
          "context_filter": "calibres"
         },
         {"tag": "mejorguitarra",
-         "patterns": ["¿Que guitarra es mejor?", "¿Que guitarra me recomiendas mejor?", "No se cual guitarra es mejor"],
-         "responses": ["¿Que guitarra se puede adaptar a ti?, Depende el estilo de musica, Gibson destaca por su estilo y sonido cercano al Blues, Fender destaca por el tamaño de su mastil para ofrecer solos complejos de guitarra, Ibanez posee la mejor configuración de microafinación y Yamaha posee una calidad de sonido bastante buena."],
+         "patterns": ["¿Que guitarra es mejor?", "¿Que guitarra me recomiendas mejor?", "No se cual quitarra es mejor"],
+         "responses": ["¿Que guitarra se puede adaptar a ti?, Depende el estilo de musica, Gibson destaca por su estilo y sonido cercano al Blues, Fender destaca por el tamaño de su mastil para ofrecer solos complejos de guitarra, Ibanez posee la mejor configuración de microafinación y Yamaha posee una calidad de sonido bastante buena.", "Las que te vendamos en nuestra tienda :D"],
          "context_filter": "mejorguitarra"
         }
    ]
